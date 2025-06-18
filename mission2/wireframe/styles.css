@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    padding: 1rem 2rem;
+  }
+  
+  nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  main {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  
+  .top-rated {
+    flex: 3;
+  }
+  
+  .book-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .book-meta {
+    text-align: left;
+    align-self: flex-start;
+    margin-bottom: 1rem;
+  }
+  
+  .book-info {
+    text-align: center;
+  }
+  
+  .book-cover {
+    width: 200px;
+    height: 280px;
+    background: #ccc;
+    margin: 1rem 0;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .filters {
+    flex: 1;
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .filters label {
+    margin-top: 1rem;
+  }
+  
+  .filters select {
+    width: 100%;
+    padding: 0.4rem;
+    margin-top: 0.3rem;
+  }
+  
+  

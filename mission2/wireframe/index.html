@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kids Read for Fun</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Kids Read for Fun</h1>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Archive</a>
+      <a href="#">Search</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="top-rated">
+      <div class="book-card">
+        <div class="book-meta">
+          <p>July 5, 2022</p>
+          <p>10–14</p>
+          <p>Fantasy</p>
+          <p>****</p>
+        </div>
+        <div class="book-info">
+          <h3>Septimus Heap Book One: Magyk</h3>
+          <div class="book-cover"></div>
+          <p class="description">
+            Lorem ipsum dolor sit amet at delectus accommodare his consul copiosae legendos at vix ad putent delectus
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <aside class="filters">
+      <label for="sort">Sort</label>
+      <select id="sort">
+        <option value="title">Title</option>
+        <option value="date">Newest</option>
+      </select>
+
+      <label for="age">Age Range:</label>
+      <select id="age">
+        <option value="all">All</option>
+        <option value="10-12">10–12</option>
+        <option value="13-16">13–16</option>
+      </select>
+
+      <label for="genre">Genre:</label>
+      <select id="genre">
+        <option value="all">All</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="mystery">Mystery</option>
+      </select>
+
+      <label for="rating">Rating:</label>
+      <select id="rating">
+        <option value="all">All</option>
+        <option value="5">★★★★★</option>
+        <option value="4">★★★★</option>
+        <option value="3">★★★</option>
+      </select>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

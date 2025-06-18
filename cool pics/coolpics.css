@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+:root {
+  --primary-color: #52489c;
+  --secondary-color: #59c3c3;
+  --accent-color: #f45b69;
+  --text-dark: #333;
+  --text-light: #ebebeb;
+  --primary-font: Arial, Helvetica, sans-serif;
+  --secondary-font: 'Mooli', sans-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 1.2em;
+  margin: 0;
+  color: var(--text-dark);
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.5em 1em;
+  }  
+
+nav {
+  margin-top: 1em;
+}
+
+nav a {
+  display: block;
+  color: var(--text-light);
+  text-decoration: none;
+  margin: 0.5em;
+  font-family: var(--secondary-font);
+}
+nav a:hover { 
+    color: var(--accent-color);
+}
+#menu-button {
+  background: none;
+  border: none;
+  font-size: 1em;
+  color: var(--text-light);
+  margin-top: 0.5em;
+  cursor: pointer;
+}
+
+main {
+  padding: 1em;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1em;
+  }  
+
+  
+
+figure {
+  margin: 0;
+  padding: 0.5em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 4px;
+    max-width: 250px;
+    transition: transform 0.3s ease;
+  }
+  
+  
+
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Medium screens: 2-column grid */
+@media screen and (min-width: 700px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Large screens: 3-column grid and horizontal nav */
+@media screen and (min-width: 1000px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0 1em;
+  }
+}
+.hide {
+    display: none;
+}
+
