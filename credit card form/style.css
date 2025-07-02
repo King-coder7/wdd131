@@ -1,0 +1,88 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  main {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  form {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-areas: 
+      'front front'
+      'back back'
+      'button button';
+    gap: 1rem;
+    position: relative;
+  }
+  
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #ddd;
+  }
+  
+  .front {
+    grid-area: front;
+    position: relative;
+    z-index: 2;
+    display: grid;
+    gap: 10px;
+  }
+  
+  .back {
+    grid-area: back;
+    background-color: #ccc;
+    z-index: 1;
+    position: relative;
+    display: grid;
+    gap: 10px;
+  }
+  
+  .black-bar {
+    height: 30px;
+    background-color: #333;
+  }
+  
+  label {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+    display: block;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+  }
+  
+  button {
+    grid-area: button;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .errorMsg {
+    color: red;
+    font-size: 0.9rem;
+  }
+  
