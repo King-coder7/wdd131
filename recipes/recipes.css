@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: "Amatic SC", cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--primary-font);
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    height: 40px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.search input {
+    flex-grow: 1;
+    padding: 0.5rem;
+}
+
+.recipe {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 6px;
+    max-width: 600px;
+}
+
+.recipe img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.tags span {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    margin-bottom: 0.5rem;
+}
+
+.rating {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.description {
+    display: none;
+}
+
+footer {
+    font-size: 0.6em;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.social img {
+    width: 24px;
+    margin: 0 0.25rem;
+}
+
+@media (min-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .description {
+        display: block;
+    }
+}
+
+@media (min-width: 960px) {
+    body {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+}
