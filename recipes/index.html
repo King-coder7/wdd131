@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RecipeBook</title>
     <link rel="stylesheet" href="recipes.css" />
-    <script defer src="recipes.js"></script>
+    <script type="module" src="recipes.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
     <meta name="description" content="Delicious and easy-to-follow recipes!">
     <meta property="og:title" content="RecipeBook">
@@ -21,26 +21,14 @@
         <h1>RecipeBook</h1>
     </header>
 
-    <main>
-        <form class="search">
-            <label for="search">Find a recipe</label>
-            <input type="text" id="search" placeholder="Find a recipe" />
-            <button type="submit" aria-label="Search">🔍</button>
-        </form>
+    <form class="search">
+        <label for="search">Find a recipe</label>
+        <input type="text" id="search" placeholder="Find a recipe" />
+        <button type="submit" aria-label="Search">🔍</button>
+    </form>
 
-        <section class="recipe">
-            <img src="apple-pie.jpg" alt="Apple Crisp dessert" />
-            <div class="tags"><span>dessert</span></div>
-            <h2>Apple Crisp</h2>
-            <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                <span aria-hidden="true">⭐</span>
-                <span aria-hidden="true">⭐</span>
-                <span aria-hidden="true">⭐</span>
-                <span aria-hidden="true">⭐</span>
-                <span aria-hidden="true">☆</span>
-            </span>
-            <p class="description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
-        </section>
+    <main>
+        <!-- Recipes will be dynamically inserted here -->
     </main>
 
     <footer>
