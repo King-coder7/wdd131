@@ -1,0 +1,158 @@
+<!-- dom-basics.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 2</title>
+    <!--
+      The 'defer' attribute ensures that the script is executed after the HTML
+      document has been completely parsed and the DOM is ready.
+      This prevents errors like trying to access 'document.body' before it exists.
+    -->
+    <script src="dom-basics.js" defer></script>
+    <style>
+      /* General body styling */
+      body {
+        font-family: "Inter", sans-serif;
+        margin: 20px;
+        background-color: #f4f7f6;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      /* Styling for existing sections */
+      section {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        padding: 20px;
+      }
+
+      h1, h2 {
+        color: #2c3e50;
+        border-bottom: 2px solid #e0e0e0;
+        padding-bottom: 10px;
+        margin-top: 0;
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      /* Styling for the paragraph with an ID */
+      #p2 {
+        color: #e74c3c;
+        font-weight: bold;
+      }
+
+      /* Styling for the paragraph with a class */
+      .green {
+        color: #27ae60;
+        font-style: italic;
+      }
+
+      /* --- Styles for elements added by JavaScript --- */
+
+      /* Styling for the first paragraph added by JS */
+      .js-added-paragraph {
+        background-color: #ecf0f1;
+        padding: 10px;
+        border-left: 5px solid #3498db;
+        border-radius: 4px;
+        margin-top: 20px;
+      }
+
+      /* Styling for the image added by JS */
+      .js-added-image {
+        display: block; /* Make it a block element to center */
+        margin: 20px auto; /* Center the image */
+        border: 3px solid #9b59b6;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        max-width: 100%; /* Ensure responsiveness */
+        height: auto; /* Maintain aspect ratio */
+      }
+
+      /* Styling for the div containing the list added by JS */
+      .js-added-list-container {
+        background-color: #f0f8ff;
+        padding: 15px;
+        border: 1px dashed #7f8c8d;
+        border-radius: 6px;
+        margin-top: 20px;
+      }
+
+      .js-added-list-container ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+
+      .js-added-list-container li {
+        margin-bottom: 5px;
+        color: #2980b9;
+      }
+
+      /* Styling for the new sections added by JS */
+      .js-added-section {
+        background-color: #e8f6f3;
+        border: 1px solid #1abc9c;
+        border-radius: 10px;
+        padding: 25px;
+        margin-top: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+      }
+
+      .js-added-section h2 {
+        color: #16a085;
+        border-bottom-color: #1abc9c;
+      }
+
+      .js-added-section p {
+        color: #34495e;
+      }
+
+      /* Specific styling for the individual method section */
+      .js-added-section.individual-method {
+        background-color: #f9fbe7;
+        border-color: #aed581;
+      }
+
+      .js-added-section.individual-method h2 {
+        color: #689f38;
+        border-bottom-color: #aed581;
+      }
+
+      /* Specific styling for the innerHTML method section */
+      .js-added-section.innerhtml-method {
+        background-color: #ffebee;
+        border-color: #ef9a9a;
+      }
+
+      .js-added-section.innerhtml-method h2 {
+        color: #c62828;
+        border-bottom-color: #ef9a9a;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Week 2</h1>
+    <section>
+      <h2>Section 1</h2>
+      <p>This is a paragraph</p>
+      <p id="p2">This is a paragraph with an ID</p>
+    </section>
+    <section>
+      <h2>Section 2</h2>
+      <div>
+        <p>This is a paragraph in section 2</p>
+        <p class="green">This is a paragraph with an class</p>
+      </div>
+    </section>
+    <!--
+      Elements below this point will be added by the dom-basics.js script
+      when the page loads.
+    -->
+  </body>
+</html>
